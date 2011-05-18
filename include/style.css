@@ -1,0 +1,41 @@
+h1, h2, h3, h4, span, div, li, ul {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+    width: 600px;
+    margin: 5px;
+    display: block;
+}
+
+#top-title {
+    position: relative;
+}
+
+.nav-list {
+    list-style-type:none;
+    margin : 0px;
+    padding : 0px;
+}
+
+.nav-link {
+    display : inline;
+    margin : 2px;
+    padding : 3px;
+    background : #ccc;
+}
+
+.nav-link:hover {
+    background : #999;
+}
+
+.nav-link.selected {
+    border : solid 2px;
+    margin : 0px;
+}
+
+.main-text {
+    padding: 2px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Michael Z. Lee - Computer Science PhD @University of Texas: Austin</title>
+    <link href="include/style.css" rel="stylesheet" type="text/css">
+    <script src="include/standard.js" type="text/javascript"></script>
+    <script src="include/pager.js" type="text/javascript"></script>
+  </head>
+  <body id="main">
+    <div id="top-box" class="box">
+      <h1 id="top-title">about</h1>
+      <ul id="top-nav" class="nav-list">
+	<li id="about" class="nav-link"><span>About</span></li>
+	<li id="courses" class="nav-link"><span>Courses</span></li>
+	<li id="research" class="nav-link"><span>Research</span></li>
+	<li id="cv" class="nav-link"><span>CV</span></li>
+      </ul>
+    </div>
+    <div id="main-box" class="box">
+    </div>
+    <script type="text/javascript">
+      var navList = $$("li");
+      for (i in navList) {
+        if (navList[i].className == "nav-link") {
+          navList[i].addEventListener('click', (function() {selectSection(this);}), false);
+	}
+      }
+      selectSection($("about"));
+    </script>
+  </body>
+</html>
