@@ -46,5 +46,5 @@ function selectSection (obj) {
    }
    obj.setAttribute("class", "nav-link selected");
    selected = obj;
-   retrieveUrl("include/" + obj.id + ".json", setContainer);
+   retrieveUrl(obj.id + ".json", setContainer);
 }
