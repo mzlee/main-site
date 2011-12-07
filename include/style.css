@@ -37,7 +37,7 @@
 #content {
     min-width: 400px;
     max-width: 600px;
-    min-height: 400px;
+    min-height: 300px;
     display: block;
     padding-left: 5px;
     padding-right: 5px;
@@ -62,8 +62,8 @@ body {
 }
 
 h1, h2, h3, h4, p {
-    padding: 5px 0px;
-    margin: 5px 0px;
+    padding: 3px 0px;
+    margin: 3px 0px;
 
     font-family: sans-serif;
     font-weight: 900;
@@ -74,6 +74,14 @@ p {
     font-weight: 500;
 }
 
+li {
+    padding: 2px 0px;
+}
+
 .data {
     display: none;
+}
+
+.tab {
+    width: 6em;
 }

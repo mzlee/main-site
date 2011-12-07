@@ -3,14 +3,14 @@ function selectPage(selector) {
    bgurl = $("#" + selector + "-data .background").text();
    $("#content").html(html);
    $("#content").css('background', bgurl);
-   $("#title").text(selector);
+   $("#title").text($("#"+selector).text());
 
    $(".selected").removeClass("selected");
    $("#" + selector).addClass("selected");
 }
 
 function setupEvents() {
-   $("#nav li a").bind("click", function () {
+   $("#nav ul li a").bind("click", function () {
 	 selectPage(this.id);
       });
 }
