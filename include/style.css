@@ -26,12 +26,13 @@
     font-weight: 900;
     font-size: 18px;
     text-decoration: none;
-    color: #000;
+    color: #333;
     padding: 5px 7px;
 }
 
 #nav .selected {
-    color: #333;
+    color: #000;
+    background: #ddd;
 }
 
 #content {
@@ -84,4 +85,28 @@ li {
 
 .tab {
     width: 6em;
+}
+
+.paper-title {
+    font-weight: 600;
+    font-size: 16;
+}
+.paper-bib {
+    font-weight: 600;
+    font-size: 14;
+    margin-left: 16px;
+    padding: 4px;
+}
+.paper-links {
+    font-size: 14;
+}
+.authors {
+    // display: inline-block;
+}
+.me {
+    font-weight: 900;
+}
+.conference {
+    // display: inline-block;
+    font-style:italic;
 }
