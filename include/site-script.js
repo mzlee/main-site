@@ -5,12 +5,12 @@ function selectPage(selector) {
    $("#content").css('background', bgurl);
    $("#title").text($("#"+selector).text());
 
-   $(".selected").removeClass("selected");
-   $("#" + selector).addClass("selected");
+   $(".active").removeClass("active");
+   $("#" + selector).parent().addClass("active");
 }
 
 function setupEvents() {
-   $("#nav ul li a").bind("click", function () {
+   $(".nav li a").bind("click", function () {
 	 selectPage(this.id);
       });
 }
