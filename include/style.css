@@ -87,21 +87,26 @@ li {
     width: 6em;
 }
 
-.paper-title {
-    font-weight: 600;
+.intern-company, .teaching-course {
+    font-weight: 900;
     font-size: 16;
 }
-.paper-bib {
-    font-weight: 600;
+
+.paper-title, .intern-position {
+    font-weight: 900;
+    font-size: 16;
+}
+.paper-bib, .intern-team {
+    font-weight: 450;
     font-size: 14;
     margin-left: 16px;
     padding: 4px;
 }
-.paper-links {
+.paper-links, .intern-other {
     font-size: 14;
 }
 .authors {
-    // display: inline-block;
+    // font-weight: 400;
 }
 .me {
     font-weight: 900;
@@ -109,4 +114,16 @@ li {
 .conference {
     // display: inline-block;
     font-style:italic;
+    // font-weight: 400;
+}
+
+.block {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    min-width: 250px;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    margin-right: 5px;
+    padding-right: 5px;
 }
