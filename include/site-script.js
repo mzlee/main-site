@@ -16,8 +16,11 @@ function setupEvents() {
 }
 
 function setupAddress() {
-    var addr = $("#address");
-    addr.text(["mzlee" + "@cs", "utexas", "edu"].join('.'));
+   $("#address").html([
+      "m" + "zle" + "e" + "@" + "<span style='display:none'>fo",
+      "o</span>"  + "cs",
+      "utexas",
+      "edu"].join('.'));
 }
 
 $(document).ready(function() {
