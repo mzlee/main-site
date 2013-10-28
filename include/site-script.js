@@ -15,8 +15,14 @@ function setupEvents() {
       });
 }
 
+function setupAddress() {
+    var addr = $("#address");
+    addr.text(["mzlee" + "@cs", "utexas", "edu"].join('.'));
+}
+
 $(document).ready(function() {
       setupEvents();
+      setupAddress();
       var url = window.location.href,
 	 i, j, target;
       i = url.indexOf("#!");
