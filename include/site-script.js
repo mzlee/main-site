@@ -16,11 +16,15 @@ function setupEvents() {
 }
 
 function setupAddress() {
-   $("#address").html([
+   $("#emailaddress").html([
       "m" + "zle" + "e" + "@" + "<span style='display:none'>fo",
       "o</span>"  + "cs",
       "utexas",
       "edu"].join('.'));
+   $("#mailingaddress").html([
+      "Department of Computer Science",
+      "2317 Speedway, Stop D9500",
+      "Austin, TX 78712-1757"].join('<br />\n'));
 }
 
 $(document).ready(function() {
