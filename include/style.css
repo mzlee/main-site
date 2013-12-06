@@ -128,3 +128,7 @@ li {
     margin-right: 5px;
     padding-right: 5px;
 }
+
+.no-js-hide {
+    display: none;
+}

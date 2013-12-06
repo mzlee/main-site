@@ -47,25 +47,27 @@
           <span class="brand">Michael Z. Lee</span>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a id="about" class="active" href="#!/about">About</a></li>
-              <li><a id="research" href="#!/research">Research</a></li>
-              <li><a id="projects" href="#!/projects">Projects</a></li>
-              <li><a id="contact" href="#!/contact">Contact</a></li>
-              <li><a id="cv" href="#!/cv">CV</a></li>
+              <li><a id="about-nav" class="active" href="#about">About</a></li>
+              <li><a id="research-nav" href="#research">Research</a></li>
+              <li><a id="projects-nav" href="#projects">Projects</a></li>
+              <li><a id="contact-nav" href="#contact">Contact</a></li>
+              <li><a id="cv-nav" href="#cv">CV</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container no-js-hide">
       <h1 id="title"></h1>
       <!-- Content goes here -->
       <div id="content"></div>
     </div> <!-- /container -->
 
-    <div class="hidden" id="about-data">
-      <div class="background">
+    <div class="hidden-data container" id="about-data">
+      <span id="about" style="font-size: 3em;">&nbsp;</span>
+      <h1>About</h1>
+      <div class="background hidden">
 	url(pics/me.png) no-repeat bottom right
       </div>
       <div class="info">
@@ -88,7 +90,9 @@
 	</p>
       </div>
     </div>
-    <div class="hidden" id="research-data">
+    <div class="hidden-data container" id="research-data">
+      <span id="research" style="font-size: 3em;">&nbsp;</span>
+      <h1>Research</h1>
       <div class="info">
 	<h3>Statement</h3>
 	<p>
@@ -219,7 +223,9 @@
 	</ul>
       </div>
     </div>
-    <div class="hidden" id="projects-data">
+    <div class="hidden-data container" id="projects-data">
+      <span id="projects" style="font-size: 3em;">&nbsp;</span>
+      <h1>Projects</h1>
       <div class="info">
 	<h3>Research Projects</h3>
 	<ul>
@@ -240,7 +246,9 @@
 	</ul>
       </div>
     </div>
-    <div class="hidden" id="contact-data">
+    <div class="hidden-data container" id="contact-data">
+      <span id="contact" style="font-size: 3em;">&nbsp;</span>
+      <h1>Contact</h1>
       <div class="info">
 	<h3>Mailing Address</h3>
 	<span id="mailingaddress">This does not display without JavaScript enabled</span>
@@ -257,7 +265,9 @@
 	</ul>
       </div>
     </div>
-    <div class="hidden" id="cv-data">
+    <div class="hidden-data container" id="cv-data">
+      <span id="cv" style="font-size: 3em;">&nbsp;</span>
+      <h1>CV</h1>
       <div class="info">
 	<h2>education:</h2>
 	<h4>The University of Texas at Austin</h4>
