@@ -49,7 +49,8 @@
             <ul class="nav">
               <li><a id="about-nav" class="active" href="#about">About</a></li>
               <li><a id="research-nav" href="#research">Research</a></li>
-              <li><a id="projects-nav" href="#projects">Projects</a></li>
+              <li><a id="publications-nav" href="#publications">Publications</a></li>
+              <!-- <li><a id="projects-nav" href="#projects">Projects</a></li> -->
               <li><a id="contact-nav" href="#contact">Contact</a></li>
               <li><a id="cv-nav" href="#cv">CV</a></li>
             </ul>
@@ -72,7 +73,7 @@
       </div>
       <div class="info">
 	<p>
-	  I am a third year, PhD pre-candidate
+	  I am a fourth year, PhD pre-candidate
 	  in <a href="https://cs.utexas.edu/">Computer Science</a> at
 	  <a href="https://utexas.edu/">The University of Texas at
 	  Austin</a>.  My adviser is
@@ -105,10 +106,68 @@
 	  cryptographic tools in a practical setting.
 	</p>
 	<p>
-	  See more details about past
-	  <a onclick="selectPage('projects');" href="#!/projects">projects</a> I've worked on.
+	  See a full listing of my
+	  <a onclick="selectPage('publications');" href="#!/publications">publications</a>.
 	</p>
+	<h3>Research Projects</h3>
+	<ul>
+	  <li>
+	    <h4><a href="http://zweb.cs.utexas.edu/users/osa/anon-pass/">Anon-Pass</a></h4>
+	    Anon-Pass provide practical anonymity for users of
+	    subscription services.  It allows users to authenticate to
+	    a service anonymously (i.e., prove the to service s/he
+	    should be allowed access) without linking the current
+	    access with any prior login.  But at the same time, it
+	    guarantees that if a user tries to log in more than once
+	    at the same time, the service will be able to detect the
+	    double use of a single credential.<br />
+	    [<a href="https://github.com/ut-osa/anon-pass">source code</a>]
+	  </li>
+	  <li>
+	    <h4>InkTag</h4>
+	    InkTag is a virtualization-based architecture that gives
+	    strong safety guarantees to high-assurance processes even
+	    in the presence of a malicious operating system. We
+	    introduce paraverification, a technique that simplifies
+	    the InkTag hypervisor by forcing the untrusted operating
+	    system to participate in its own verification.
+	  </li>
+	  <li>
+	    <h4>Lacuna</h4>
+	    Modern systems keep long memories and an adversary who
+	    gains access to a Linux system can recover the contents of
+	    applications' windows, audio buffers, and data remaining
+	    in device drivers — long after the applications have
+	    terminated.  Lacuna is a system that allows users to run
+	    programs in "private sessions."  After the session is
+	    over, all memories of its execution are erased.
+	  </li>
+	</ul>
+      </div>
+    </div>
+    <div class="hidden-data container" id="publications-data">
+      <span id="publications" style="font-size: 3em;">&nbsp;</span>
+      <h1>Publications</h1>
+      <div class="info">
 	<h3>Computer Science Publications</h3>
+	<h4>2014</h4>
+	<ul>
+	  <li>
+	    <div class="paper-title">Application-Deﬁned Decentralized Access Control</div>
+	    <div class="paper-bib">
+	      <span class="authors">
+		Yuanzhong Xu, Alan M. Dunn, Owen S. Hofmann, <span class="me">Michael Z. Lee</span>, Syed Akbar Mehdi, Emmett Witchel.
+	      </span>
+	      To appear in the
+	      <span class="conference">
+		Proceedings of the 2014 USENIX Annual Technical Conference (ATC), Philadelphia, PA, June 2014.
+	      </span>
+	    </div>
+	    <div class="paper-links">
+	      <span>[<a href="https://www.usenix.org/conference/atc14">conf</a>]</span>
+	    </div>
+	  </li>
+	</ul>
 	<h4>2013</h4>
 	<ul>
 	  <li>
@@ -124,7 +183,7 @@
 	    </div>
 	    <div class="paper-links">
 	      <span>[<a href="http://www.ieee-security.org/TC/SP2013/">conf</a>]</span>
-	      <span>[<a href="pubs/lee_sp13.pdf">pdf</a>]</span>
+	      <span>[<a href="pubs/lee_sp13-anon-pass.pdf">pdf</a>]</span>
 	      <span>[<a href="pubs/lee_sp13_fullversion.pdf">full version</a>]</span>
 	      <span>[<a href="pubs/lee_sp13_slides.pdf">slides</a>]</span>
 	      <span>[<a href="http://z.cs.utexas.edu/users/osa/anon-pass/">project webpage</a>]</span>
@@ -143,7 +202,7 @@
 	    </div>
 	    <div class="paper-links">
 	      <span>[<a href="http://asplos13.rice.edu/">conf</a>]</span>
-	      <!--<span>[<a href="pubs/hofmann_asplos13.pdf">pdf</a>]</span>-->
+	      <span>[<a href="pubs/hofmann_asplos13-inktag.pdf">pdf</a>]</span>
 	    </div>
 	  </li>
 	</ul>
@@ -225,21 +284,9 @@
     </div>
     <div class="hidden-data container" id="projects-data">
       <span id="projects" style="font-size: 3em;">&nbsp;</span>
-      <h1>Projects</h1>
+      <h1>Other Projects and Links</h1>
       <div class="info">
-	<h3>Research Projects</h3>
-	<ul>
-	  <li>
-	    Anon-Pass
-	  </li>
-	  <li>
-	    InkTag
-	  </li>
-	  <li>
-	    Lacuna
-	  </li>
-	</ul>
-	<h3>Side projects</h3>
+	<h3>Other projects</h3>
 	<ul>
 	  <li><a href="http://webian.org/shell/">Webian Shell</a></li>
 	  <li><a href="http://github.com/mzlee/">more</a></li>
@@ -288,6 +335,21 @@
 	</ul>
 	
 	<h2 id="CV-research">research:</h2>
+	<h4>2014</h4>
+	<ul>
+	  <li>
+	    <div class="paper-title">Application-Deﬁned Decentralized Access Control</div>
+	    <div class="paper-bib">
+	      <span class="authors">
+		Yuanzhong Xu, Alan M. Dunn, Owen S. Hofmann, <span class="me">Michael Z. Lee</span>, Syed Akbar Mehdi, Emmett Witchel.
+	      </span>
+	      To appear in the
+	      <span class="conference">
+		Proceedings of the 2014 USENIX Annual Technical Conference (ATC), Philadelphia, PA, June 2014.
+	      </span>
+	    </div>
+	  </li>
+	</ul>
 	<h4>2013</h4>
 	<ul>
 	  <li>
@@ -296,7 +358,7 @@
 	      <span class="authors">
 		<span class="me">Michael Z. Lee</span>, Alan M. Dunn, Jonathan Katz, Brent Waters, Emmett Witchel.
 	      </span>
-	      To appear in the
+	      In the
 	      <span class="conference">
 		Proceedings of the 34th IEEE Symposium on Security and Privacy (S&amp;P), San Francisco, CA, May 2013.
 	      </span>
@@ -308,7 +370,7 @@
 	      <span class="authors">
 		Owen S. Hofmann, Alan M. Dunn, Sangman Kim, <span class="me">Michael Z. Lee</span>, Emmett Witchel.
 	      </span>
-	      To appear in the
+	      In the
 	      <span class="conference">
 		Proceedings of the 18th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), Houston, TX, March 2013.
 	      </span>
