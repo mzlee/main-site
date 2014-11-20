@@ -1,10 +1,9 @@
 /* @flow */
 
 function selectPage(selector) {
-   html = $("#"+selector+"-data .info").html();
-   bgurl = $("#"+selector+"-data .background").text();
-   $("#content").html(html);
-   $("#content").css('background', bgurl);
+   $("#content").html($("#"+selector+"-data .info").html());
+   $("#content").css('background', $("#"+selector+"-data .background").text());
+
    $("#title").text($("#"+selector+"-nav").text());
    $(".active").removeClass("active");
    $("#"+selector+"-nav").parent().addClass("active");
