@@ -1,3 +1,5 @@
+/* @flow */
+
 function selectPage(selector) {
    html = $("#"+selector+"-data .info").html();
    bgurl = $("#"+selector+"-data .background").text();
